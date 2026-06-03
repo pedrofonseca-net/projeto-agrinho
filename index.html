@@ -4,101 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrinho 2026 | O Agro Forte</title>
-    <style>
-        /* Estilos Globais */
-        :root {
-            --primary-color: #2E7D32; /* Verde forte */
-            --secondary-color: #81C784; /* Verde claro */
-            --accent-color: #F57F17; /* Laranja/Terra */
-            --text-color: #333333;
-            --bg-light: #F1F8E9;
-            --bg-white: #FFFFFF;
-        }
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            scroll-behavior: smooth;
-        }
+    <header>
+        <nav>
+            <a href="#" class="logo">Agrinho 2026</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        body {
-            color: var(--text-color);
-            background-color: var(--bg-light);
-            line-height: 1.6;
-        }
+    <section id="inicio" class="hero">
+        <div class="hero-content fade-in">
+            <h1>O Agro Forte</h1>
+            <p>Semeando conhecimento, colhendo um futuro sustentável para as próximas gerações.</p>
+        </div>
+    </section>
 
-        /* Navegação */
-        header {
-            background-color: var(--primary-color);
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
+    <section id="sobre" class="container">
+        <div class="sobre-content fade-in">
+            <h2>Sobre o Projeto</h2>
+            <p>O Agrinho 2026 visa conectar a força do campo com a tecnologia do futuro. Nosso objetivo é levar educação, inovação e práticas sustentáveis para os produtores e estudantes, fortalecendo a raiz do nosso país.</p>
+            <button class="btn">Saiba Mais</button>
+        </div>
+    </section>
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+    <section id="galeria" class="bg-white">
+        <div class="container fade-in">
+            <h2>Nossa Força em Imagens</h2>
+            <div class="galeria-grid">
+                <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Plantação 1">
+                <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Agricultura 2">
+                <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Colheita 3">
+            </div>
+        </div>
+    </section>
 
-        .logo {
-            color: #fff;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-decoration: none;
-        }
+    <footer id="contato">
+        <p>&copy; 2026 Agrinho - O Agro Forte. Todos os direitos reservados.</p>
+    </footer>
 
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--secondary-color);
-        }
-
-        /* Hero Section (Início) */
-        .hero {
-            background: linear-gradient(rgba(46, 125, 50, 0.8), rgba(46, 125, 50, 0.8)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-            margin-top: 60px;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Seções Gerais */
-        section {
-            padding: 80px 20px;
-            max-
+    <script src="script.js"></script>
+</body>
+</html>
